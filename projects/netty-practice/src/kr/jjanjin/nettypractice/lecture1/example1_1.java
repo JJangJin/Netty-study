@@ -14,7 +14,7 @@ class Example1_1 {
 		ServerSocket sersverSocket = new ServerSocket(1234);
 		while(true){
 			Socket clientSocket = sersverSocket.accept();
-			System.out.println("ÀÀ´äÀÌ ¿È");
+			System.out.println("í•œê¸€ë¡œë³€ê²½");
 			
 			BufferedReader in = new BufferedReader(new InputStreamReader(clientSocket.getInputStream()));
 			
@@ -28,7 +28,7 @@ class Example1_1 {
 				}
 				
 				System.out.println(request);
-				out.println(request + "out ÀÀ´ç");
+				out.println(request + "out");
 			}
 		}
 	}
